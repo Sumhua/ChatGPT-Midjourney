@@ -6,6 +6,7 @@ import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
+import NavigateIcon from "../icons/gps_antenna.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -118,13 +119,13 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          ChatGPT-Midjourney
+          Navi™ Digital
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Your own AI assistant.
+          让Ai服务你的生活
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
+          <NavigateIcon />
         </div>
       </div>
 
@@ -136,13 +137,13 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
-        <IconButton
-          icon={<GemIcon />}
-          text={shouldNarrow ? undefined : "Pro"}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => window.open(REPO_URL + "-Pro", "_blank")}
-          shadow
-        />
+        {/*<IconButton*/}
+        {/*  icon={<GemIcon />}*/}
+        {/*  text={shouldNarrow ? undefined : "Pro"}*/}
+        {/*  className={styles["sidebar-bar-button"]}*/}
+        {/*  onClick={() => window.open(REPO_URL + "-Pro", "_blank")}*/}
+        {/*  shadow*/}
+        {/*/>*/}
       </div>
 
       <div
