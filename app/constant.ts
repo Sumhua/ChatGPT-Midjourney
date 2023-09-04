@@ -1,6 +1,7 @@
 export const OWNER = "Licoy";
 export const REPO = "ChatGPT-Midjourney";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
+export const WECHAT_SERVICE_URL = 'weixin://';
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const RELEASE_URL = `${REPO_URL}/releases`;
@@ -12,6 +13,7 @@ export const DEFAULT_API_HOST = "https://chatgpt1.nextweb.fun/api/proxy";
 export enum Path {
   Home = "/",
   Chat = "/chat",
+  Service = "/service",
   Settings = "/settings",
   NewChat = "/new-chat",
   Masks = "/masks",
