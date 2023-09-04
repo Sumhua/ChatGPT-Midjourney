@@ -35,7 +35,7 @@ export function Service() {
         </div>
 
             <div className={styles["service-block-item"]}>
-                <a href="weixin://">
+                <a href="weixin://dl/scan">
                     <span className={styles["btn-primary"]}>去微信添加</span>
                 </a>
             </div>
