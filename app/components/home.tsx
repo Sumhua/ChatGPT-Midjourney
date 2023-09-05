@@ -51,6 +51,7 @@ const Chat = dynamic(async () => (await import("./chat")).Chat, {
 
 const Service = dynamic(async () => (await import("./service")).Service, {
   loading: () => <Loading noLogo />,
+  ssr: false
 });
 
 const NewChat = dynamic(async () => (await import("./new-chat")).NewChat, {

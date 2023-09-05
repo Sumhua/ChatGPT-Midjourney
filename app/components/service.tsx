@@ -1,3 +1,5 @@
+'use client'
+
 import styles from "@/app/components/home.module.scss";
 import {IconButton} from "@/app/components/button";
 import ReturnIcon from "@/app/icons/return.svg";
@@ -5,6 +7,8 @@ import Locale from "@/app/locales";
 import {Path} from "@/app/constant";
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import Image from "next/image";
+import qrCode from "../../public/service.jpg";
 
 
 export function Service() {
@@ -31,7 +35,8 @@ export function Service() {
                 <span className={styles["service-tip"]}>咨询或购买请长按保存二维码，去微信添加</span>
             </div>
         <div className={styles["service-block-item"]}>
-            <img src="/service.jpg" width="256"/>
+            <Image src={qrCode}  width={256} alt={""}/>
+             {/*<img src="/service.jpg" width="256"/> */}
         </div>
 
             <div className={styles["service-block-item"]}>
